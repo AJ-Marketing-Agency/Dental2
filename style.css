@@ -8250,9 +8250,24 @@ textarea.form-control {
         border: 2px solid #000; }
 
 .ftco-animate {
-  opacity: 0;
-  visibility: hidden; }
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+}
 
+/* Hide the loading overlay */
+#ftco-loader {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Keep the page scrollable */
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto !important;
+}
 .bg-primary {
   background: #2f89fc !important; }
 
